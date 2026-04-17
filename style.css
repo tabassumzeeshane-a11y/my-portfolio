@@ -1,0 +1,182 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* Reset default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5e6d3;
+}
+
+/* Header Styling */
+header {
+    background-color: #c8a27a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Section Styling */
+section {
+    padding: 20px;
+    margin: 15px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+/* Skills List */
+ul {
+    margin-left: 20px;
+}
+
+/* Buttons */
+button {
+    background-color: #a67c52;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #8c6239;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+/* Form Inputs */
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #c8a27a;
+    color: white;
+    margin-top: 20px;
+}
+/* Navigation */
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a:hover {
+    background-color: #a67c52;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+/* About Image Styling */
+#about img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin-bottom: 15px;
+}
+/* About Section Layout */
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* About Image */
+.about-container img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+/* Project Container */
+.project-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Project Cards */
+.project-card {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    width: 250px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+/* Project Hover Effect */
+.project-card:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+/* Contact Form Styling */
+#contact form {
+    background-color: #fdf6ef;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+}
+
+/* Form Labels */
+#contact label {
+    font-weight: bold;
+}
+
+/* Input Focus Effect */
+input:focus, textarea:focus {
+    outline: none;
+    border: 1px solid #a67c52;
+}
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+
+    /* About Section */
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Project Cards */
+    .project-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        width: 90%;
+    }
+
+    /* Navigation Menu */
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    /* Contact Form */
+    #contact form {
+        width: 100%;
+    }
+
+}
